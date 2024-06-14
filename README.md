@@ -19,13 +19,13 @@
 使用以下命令克隆仓库：
 
 ```bash
-git clone https://github.com/你的用户名/你的仓库名.git
+git clone https://github.com/ppppth/Content-of-front-end.git
 ```
 
 然后进入项目目录并安装依赖：
 
 ```bash
-cd 你的仓库名
+cd Content-of-front-end
 npm install
 ```
 
@@ -45,9 +45,7 @@ npm run build
 
 ## 功能
 
-- 功能1: 简要描述功能1
-- 功能2: 简要描述功能2
-- 功能3: 简要描述功能3
+- 功能1: this repository describes the content of front-end spot in detail
 
 ## 目录结构
 
