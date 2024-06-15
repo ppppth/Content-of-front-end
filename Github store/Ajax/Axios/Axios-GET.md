@@ -3,7 +3,7 @@
 ### HTTP 三种参数:query/params/body
 1. GET请求(不可以携带body参数)
 ---
--不携带参数
+- 不携带参数
 ```javascript
     //简写
     axios.get('url address').then(
@@ -26,7 +26,7 @@
         }
     )
 ```
--携带参数---query
+- 携带参数---query
 ```javascript
     //简写
     axios.get('url address',{params:{key:value}}).then(
@@ -52,7 +52,7 @@
         }
     )
 ```
--携带参数---params
+- 携带参数---params
 ```javascript
     //node环境搭建的服务器
     const express = required('express')

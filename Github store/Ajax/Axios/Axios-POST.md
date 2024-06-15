@@ -3,7 +3,7 @@
 ### HTTP 三种参数:query/params/body
 2. POST请求
 ---
--不携带参数
+- 不携带参数
 ```javascript
     //简写
     axios.post('url address').then(
@@ -27,7 +27,7 @@
         }
     )
 ```
--携带参数---query
+- 携带参数---query
 ```javascript
     //简写      注意,这里的简写形式必须要用空对象给请求体占位
     axios.post('url address',{},{params:{key:value}}).then(
@@ -54,7 +54,7 @@
         }
     )
 ```
--携带参数---params
+- 携带参数---params
 ```javascript
     const express = required('express')
     const app = express()
@@ -94,7 +94,7 @@
         }
     )
 ```
--携带参数---body
+- 携带参数---body
 ```javascript
     const express = required('express')
     const app = express()
