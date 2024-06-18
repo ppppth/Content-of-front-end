@@ -24,7 +24,7 @@
         return config
     })
 ```
-2. 请求拦截器
+2. 响应拦截器
 ```JavaScript
     //提示框
     import {message} from 'antd'
