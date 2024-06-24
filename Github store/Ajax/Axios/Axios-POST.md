@@ -56,9 +56,9 @@
 ```
 - 携带参数---params
 ```javascript
-    const express = required('express')
+    const express = require('express')
     const app = express()
-    const cors = required('cors')
+    const cors = require('cors')
     //允许跨域
     app.use(cors())     // 允许所有的跨域请求
     //利用/:a的形式占位
@@ -96,19 +96,20 @@
 ```
 - 携带参数---body
 ```javascript
-    const express = required('express')
+    const express = require('express')
     const app = express()
-    const cors = required('cors')
+    const cors = require('cors')
     //允许跨域
     app.use(cors())     // 允许所有的跨域请求
     //发送请求体配置      必须要有
     app.use(express.urlencoded({extended:true}))
     app.use(express.json())
-    //利用/:a的形式占位
-    app.post('/path/:a/:b',(req,res)=>{
-        //可以用req.params接收到请求方传递过来的params参数
-        req.params
-        res.send('返回的数据')
+
+    app.post('/path',(req,res)=>{
+        const requestBody = req.body;
+            // 可以在这里处理请求体的数据
+            // 例如，将处理后的数据返回给客户端
+        res.send('返回的数据: ' + JSON.stringify(requestBody))
     })
     app.listen(port,(err)=>{
         throw err
