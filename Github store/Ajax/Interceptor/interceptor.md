@@ -13,7 +13,7 @@
     //如果需要转换格式
     import qs from 'queryString'
 
-    Axios.interceptor.request.use((config)=>{
+    Axios.interceptors.request.use((config)=>{
         //config是请求时包含所携带的参数一个配置对象
         const {method,data} = config
         if(method.toLowerCase() === 'post'){
@@ -29,7 +29,7 @@
     //提示框
     import {message} from 'antd'
 
-    Axios.interceptor.response.use((response)=>{
+    Axios.interceptors.response.use((response)=>{
         return response.data    //将响应的数据返回,当调用请求接口的时候,返回的值就是data
     },(error)=>{
         message.error(error.message,2)  //提示用户,延时2s
