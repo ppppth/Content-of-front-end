@@ -3,16 +3,11 @@
 ```markdown
 # 项目名称
 
-一段简要的项目描述。
+note
 
 ## 目录
 
-- [安装](#安装)
-- [使用](#使用)
-- [功能](#功能)
-- [目录结构](#目录结构)
-- [贡献](#贡献)
-- [许可证](#许可证)
+- 描述了一些有趣的故事。。。
 
 ## 安装
 
@@ -41,28 +36,6 @@ npm start
 
 ```bash
 npm run build
-```
-
-## 功能
-
-- 功能1: this repository describes the content of front-end spot in detail
-
-## 目录结构
-
-简要描述项目的目录结构：
-
-```plaintext
-你的仓库名/
-├── public/             # 静态资源
-├── src/                # 源代码
-│   ├── assets/         # 资源文件
-│   ├── components/     # 组件
-│   ├── pages/          # 页面
-│   ├── App.js          # 主要组件
-│   ├── index.js        # 应用入口
-├── .gitignore          # 忽略文件
-├── package.json        # 项目配置文件
-└── README.md           # 项目说明文件
 ```
 
 ## 贡献
